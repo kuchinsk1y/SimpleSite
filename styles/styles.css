@@ -1,0 +1,333 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.64;
+}
+
+.container {
+  width: 90%;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bg-primary {
+  background-color: #eeeff1;
+}
+
+.bg-accent {
+  background-color: #34547a;
+}
+
+header {
+  width: 100%;
+  padding: 60px 0;
+  height: 700px;
+}
+
+header nav {
+  margin-bottom: 200px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header nav ul li {
+  margin-right: 30px;
+}
+
+header nav ul li:last-child {
+  margin-right: 0;
+}
+
+header nav ul li a {
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #34547a;
+}
+
+header h1 {
+  font-weight: 500;
+  font-size: 48px;
+}
+
+header .description {
+  color: #727272;
+  margin: 20px 0;
+  max-width: 540px;
+}
+
+header button {
+  padding: 20px 40px;
+  letter-spacing: 0.1em;
+  color: white;
+  background: #34547a;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.about {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  margin: 0 0 20px;
+}
+
+.about .description {
+  color: #727272;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.projects {
+  padding: 100px 0;
+}
+
+.projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.projects ul li {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.projects ul li h3 {
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.projects ul li h3 .count {
+  text-align: left;
+  display: block;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.works {
+  padding: 100px 0;
+}
+
+.works h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+}
+
+.works .description {
+  width: 100%;
+  max-width: 540px;
+  text-align: center;
+  color: #727272;
+  margin: 50px auto;
+}
+
+.works .video {
+  position: relative;
+}
+
+.works .video .video-bg {
+  width: 100%;
+  max-width: 1110px;
+  height: auto;
+}
+
+.works .video button {
+  position: absolute;
+  height: 64px;
+  left: 50%;
+  top: 50%;
+  margin-left: -32px;
+  margin-top: -32px;
+  border-radius: 50%;
+  border: none;
+}
+
+footer {
+  color: #ffffff;
+  padding: 30px 0;
+}
+
+footer h3 {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+footer .copyrights {
+  margin: 10px 0 0;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+/* ================================= MEDIA ================================= */
+
+@media (max-width: 1215px) {
+  .projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .projects ul li {
+    width: 30%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 854px) {
+  .projects ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  header nav {
+    margin-bottom: 40px;
+  }
+
+  header nav ul {
+    display: block;
+  }
+
+  header nav ul li {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  header nav ul li a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #34547a;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  header .description {
+    font-size: 1.25rem;
+    width: 100%;
+  }
+
+  header button {
+    padding: 15px 30px;
+    font-size: 0.875rem;
+  }
+
+  .about .description {
+    font-size: 1.25rem;
+  }
+
+  .works .description {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 5px;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  header .description {
+    font-size: 1.25rem;
+  }
+
+  header button {
+    padding: 20px 80px;
+    font-size: 0.75rem;
+  }
+
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .about .description {
+    font-size: 1.25rem;
+  }
+
+  .works .description {
+    font-size: 1.25rem;
+  }
+
+  .projects ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .projects ul li {
+    width: auto;
+    text-align: center;
+  }
+
+  header nav {
+    margin-bottom: 40px;
+  }
+
+  header nav ul {
+    display: block;
+  }
+
+  header nav ul li {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  header nav ul li a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #34547a;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+  }
+}
